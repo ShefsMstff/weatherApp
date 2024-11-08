@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Simple Weather App</h1>
+    <div class="search">
+        <form onsubmit="event.preventDefault(); getWeather();">
+            <input type="text" id="cityInput" placeholder="Search for a city" />
+            <button type="button" id="submitBtn" onclick="getWeather()">SUBMIT</button>
+        </form>
+
+    </div>
+    <div id="weatherResults"></div>
+</body>
+</html>
